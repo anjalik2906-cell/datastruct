@@ -2,8 +2,9 @@
 using namespace std;
 int elementCount(int size,  int sameElement[]){
     int count=0;
-    for(int i=0;i<size; i++){
-        if(sameElement[i] == sameElement[0]){
+    for(int i=0;i<size-1; i++){
+        if(sameElement[i] % 2==0&&
+            sameElement[i] == sameElement[i+1]){
             count ++;
         }
     }
