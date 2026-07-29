@@ -54,7 +54,7 @@ string infixToPostfix(string infix)
                 s.pop();
             }
             if (!s.empty())
-                s.pop(); // Remove '('
+                s.pop(); // Pop the opening bracket 
         }
 
         // If operator
