@@ -28,7 +28,7 @@ int main(){
     int n;
     cout<<"Enter number of students: ";
     cin>>n;
-    Student* students = new Student[n];
+    Student* students  = new Student[n];            
     for(int i=0; i<n; i++){
         cout<<"Enter information for student "<<i+1<<endl;
         students[i].getInfo();
