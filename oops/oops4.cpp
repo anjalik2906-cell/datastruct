@@ -22,6 +22,10 @@ using namespace std;
     x=20;
     cout<<"Inside call by reference function: "<<x<<endl;
  }
+ void callByAddress(int *x){
+    *x=20;
+    cout<<"Inside call by address function: "<<*x<<endl;
+ }
  int main(){
     int num=10;
     cout<<"Before calling function: "<<num<<endl;
@@ -29,6 +33,8 @@ using namespace std;
     cout<<"After calling function: "<<num<<endl;
     callByReference(num);
     cout<<"After calling by reference function: "<<num<<endl;
-    
+    callByAddress(&num);
+    cout<<"After calling by address function: "<<num<<endl;
+
     return 0;
  }
