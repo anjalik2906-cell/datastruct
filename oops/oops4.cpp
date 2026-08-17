@@ -21,7 +21,7 @@ using namespace std;
  int main(){
     int x=10;
     cout<<"Before calling function: "<<x<<endl;
-    callByValue(x);
+    callByValue(num);
     cout<<"After calling function: "<<x<<endl;
     return 0;
  }
