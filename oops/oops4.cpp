@@ -18,10 +18,17 @@ using namespace std;
     x=20;
     cout<<"Inside call by value function: "<<x<<endl;
  }
+ void callByReference(int &x){
+    x=20;
+    cout<<"Inside call by reference function: "<<x<<endl;
+ }
  int main(){
     int num=10;
     cout<<"Before calling function: "<<num<<endl;
     callByValue(num);
     cout<<"After calling function: "<<num<<endl;
+    callByReference(num);
+    cout<<"After calling by reference function: "<<num<<endl;
+    
     return 0;
  }
