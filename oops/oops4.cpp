@@ -19,9 +19,9 @@ using namespace std;
     cout<<"Inside call by value function: "<<x<<endl;
  }
  int main(){
-    int x=10;
-    cout<<"Before calling function: "<<x<<endl;
+    int num=10;
+    cout<<"Before calling function: "<<num<<endl;
     callByValue(num);
-    cout<<"After calling function: "<<x<<endl;
+    cout<<"After calling function: "<<num<<endl;
     return 0;
  }
