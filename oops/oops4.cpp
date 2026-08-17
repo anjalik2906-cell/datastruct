@@ -29,10 +29,13 @@ using namespace std;
  int main(){
     int num=10;
     cout<<"Before calling function: "<<num<<endl;
+    //call by value
     callByValue(num);
     cout<<"After calling function: "<<num<<endl;
+    //call by reference
     callByReference(num);
     cout<<"After calling by reference function: "<<num<<endl;
+    //call by address
     callByAddress(&num);
     cout<<"After calling by address function: "<<num<<endl;
 
