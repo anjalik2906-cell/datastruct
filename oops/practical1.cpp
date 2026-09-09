@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstring>
 using namespace std;
 
 class student
@@ -17,8 +18,9 @@ public:
         cout << "Enter Marks: ";
         cin >> marks;
 
+        cin.ignore();
+
         cout << "Enter Name: ";
-        cin >> ws;
         cin.getline(name, 20);
     }
 
@@ -41,11 +43,11 @@ int main()
         s[i].getinfo();
     }
 
-    cout << "\n========== Student Record ==========\n";
+    cout << "\nStudent Record\n";
+    cout << "========================\n";
 
     for (int i = 0; i < 5; i++)
     {
-        cout << "\nStudent " << i + 1 << endl;
         s[i].displayinfo();
     }
 
